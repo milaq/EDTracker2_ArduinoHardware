@@ -6,6 +6,8 @@ your <Arduino Install>/hardware/ folder.
 
 When compiling, choose the appropriate device from Tools -> Board
 
+The target hardware for EDTracker2 is a 16MHz ATMEGA32U4-based device (e.g. Sparkfun Pro Micro).
+
 Summary of changes/inclusions :
  - Arduino core files USBAPI.h/HID.cpp modified to include a USB joystick as
    part of the HID descriptor
@@ -14,4 +16,10 @@ Summary of changes/inclusions :
  - Invensense Motion Driver (Invensense)
  - Wire (TWI) library included (Nicholas Zambetti - GNU license)
  
+NB: We removed the keyboard and mouse components from the USB HID descriptor
+as of 28th Jan (pushed to Git 28th Feb) in the interests of space and neatness.
+If these matter to you (maybe you have customised the firmware to report as
+a mouse, for example) then please revert to the previous release of the
+hardware files.
+
 Tested successfully with Arduino IDE 1.8.5
