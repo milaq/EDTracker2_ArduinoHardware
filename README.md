@@ -14,4 +14,4 @@ Summary of changes/inclusions :
  - Invensense Motion Driver (Invensense)
  - Wire (TWI) library included (Nicholas Zambetti - GNU license)
  
-Tested successfully with Arduino IDE 1.6.4 and 1.6.5
+Tested successfully with Arduino IDE 1.8.5
